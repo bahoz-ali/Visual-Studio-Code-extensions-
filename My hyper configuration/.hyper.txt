@@ -1,7 +1,7 @@
 module.exports = {
   config: {
     // default font size in pixels for all tabs
-    fontSize: 15,
+    fontSize: 14,
     lineHeight:1.2,
 	
     hyperBorder: {
@@ -10,7 +10,7 @@ module.exports = {
     },
 
     // font family with optional fallbacks
-    fontFamily: '"MesloGMDZ Nerd Font", "Hack Nerd Font","FiraCode Nerd Font",Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: '"MesloLGS NF", "Hack Nerd Font","FiraCode Nerd Font",Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     webGLRenderer: false,
 
@@ -65,6 +65,11 @@ module.exports = {
       lightCyan: '#00ffff',
       lightWhite: '#ffffff'
     },
+
+    
+     scrollbarColor: 'tomato', // any valid css color
+     scrollbarOpacity: 0.1, // value between 0 and 1
+  
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
@@ -124,6 +129,8 @@ module.exports = {
       focusOnMouseHover: false,
       inactivePaneOpacity: 0.6 // Set to 1 to disable inactive panes dimming
     },
+ 
+     activeTab: '🦅',	 
    
   // a list of plugins to fetch and install from npm
   // format: [@org/]project[#version]
@@ -137,9 +144,12 @@ module.exports = {
 	     "hyper-pane",
              "hypercwd",    
              "hyper-tab-icons",
+	     "hyper-tab-icons-plus",
              'hyper-font-ligatures',
              'hyperborder',
-	     
+	     "hyper-fading-scrollbar",
+	     "hyper-active-tab",
+	     "hyper-manager",
 ],
 
   // in development, you can create a directory under
