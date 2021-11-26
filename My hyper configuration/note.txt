@@ -1,0 +1,8 @@
+yan datwani ba npm ka rastawxo aw plugina bxaita now 
+aw real pathy ka peshytr hy hyper kaman nusi 
+wata am real patha 
+
+C:\Users\bahoz\AppData\Roaming\Hyper\.hyper_plugins\node_modules
+
+wa dwatrish dabet hyper bkayawa ctrl+, bka .hyper.js 
+dabetawa la xwarawa dabet labashi plugin aw pluga tazaya ziad bkait..
