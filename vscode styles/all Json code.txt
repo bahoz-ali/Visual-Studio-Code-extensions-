@@ -1,0 +1,235 @@
+{
+  "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+  "editor.fontWeight": 300,
+  "editor.fontLigatures": true,
+  "editor.letterSpacing": 1.1,
+  "editor.lineHeight": 27,
+  "editor.fontSize": 17,
+
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.accessibilitySupport": "off",
+
+  "files.autoSave": "afterDelay",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false,
+    "editor.defaultFormatter": "Dart-Code.dart-code"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "editor.suggestSelection": "first",
+  "emulator.emulatorPathWindows": "C:\\Users\\bahoz\\AppData\\Local\\Android\\Sdk\\emulator",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "genymotion.genymotion.installedPath": "C:\\Program Files\\Genymobile\\Genymotion",
+  "genymotion.virtualBox.installedPath": "C:\\Program Files\\Oracle\\VirtualBox",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+  "liveServer.settings.ChromeDebuggingAttachment": false,
+
+  "editor.minimap.enabled": false,
+  "git.autofetch": true,
+  "sync.forceDownload": false,
+  "sync.autoUpload": true,
+  "warmUp.switchProgrammingLanguage": "javascript",
+  "warmUp.toggleColorBlindMode": "false",
+  "warmUp.switchNaturalLanguage": "english",
+  "warmUp.changeTypingMode": "words (fixed amount)",
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "comment",
+        "scope": ["comment"],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "name": "Keyword Storage",
+        "scope": [
+          "keyword",
+          "keyword.control",
+          "storage",
+          "storage.modifier",
+          "storage.type.class.js"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "name": "Entity",
+        "scope": [
+          "entity.name.method",
+          "entity.name.type.class",
+          "entity.other.attribute-name"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "name": "Variable",
+        "scope": ["variable.language"],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "name": "constant parameter",
+        "scope": ["constant", "variable.parameter"],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": ["punctuation"],
+        "settings": {
+          "foreground": "#c7d3d4ff",
+          "fontStyle": ""
+        }
+      },
+      {
+        "name": "react and thers",
+        "scope": [
+          "entity.other.attribute-name.html",
+          "entity.name.type.module.jsx"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "workbench.colorCustomizations": {
+    // "scrollbarSlider.background": "#090136",
+    // "scrollbarSlider.activeBackground": "#0a0330",
+    // "scrollbarSlider.hoverBackground": "#0a0330"
+  },
+  "warmUp.changeCount": "120",
+  "svg.preview.autoOpen": true,
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "vscode-icons",
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.showExecutionMessage": false,
+  "turboConsoleLog.addSemicolonInTheEnd": true,
+  "turboConsoleLog.includeFileNameAndLineNum": false,
+  "turboConsoleLog.delimiterInsideMessage": "",
+  "turboConsoleLog.logMessagePrefix": "",
+  "code-runner.saveFileBeforeRun": true,
+
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  /* Dictionary */
+  "cSpell.userWords": [
+    "Asos",
+    "Callout",
+    "Callouts",
+    "Copywrite",
+    "Cupertino",
+    "Deleniti",
+    "Hostify",
+    "Incidunt",
+    "Iste",
+    "Kurdo",
+    "Moshify",
+    "Omnis",
+    "Schyler",
+    "Veniam",
+    "adipisicing",
+    "amet",
+    "autofit",
+    "bahoz",
+    "beatae",
+    "collapsibles",
+    "consectetur",
+    "consequuntur",
+    "cumque",
+    "cupiditate",
+    "dolore",
+    "dolorum",
+    "eaque",
+    "earum",
+    "elit",
+    "excepturi",
+    "exercitationem",
+    "fontawesome",
+    "fortawesome",
+    "illo",
+    "ipad",
+    "labore",
+    "laboriosam",
+    "laborum",
+    "laudantium",
+    "magnam",
+    "minlength",
+    "minmax",
+    "molestiae",
+    "nums",
+    "obcaecati",
+    "odio",
+    "officiis",
+    "optio",
+    "perferendis",
+    "perspiciatis",
+    "praesentium",
+    "preconnect",
+    "quisquam",
+    "repellat",
+    "rerum",
+    "signin",
+    "unde",
+    "vero",
+    "voluptatem",
+    "voluptates",
+    "webp"
+  ],
+  "dart.flutterCreateOrganization": "com.bahoz",
+  "atomKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd"
+}

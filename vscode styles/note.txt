@@ -1,0 +1,7 @@
+this can be used for everything 
+but i found it for my special theme dracula theme 
+
+this theme had a problem 
+all parameters and some other things were italic style 
+and I di not like this kind of font style 
+i googled until i find this gold code for fixing my issue.

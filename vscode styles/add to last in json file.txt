@@ -1,0 +1,64 @@
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "comment",
+        "scope": ["comment"],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "name": "Keyword Storage",
+        "scope": [
+          "keyword",
+          "keyword.control",
+          "storage",
+          "storage.modifier",
+          "storage.type.class.js"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "name": "Entity",
+        "scope": [
+          "entity.name.method",
+          "entity.name.type.class",
+          "entity.other.attribute-name"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "name": "Variable",
+        "scope": ["variable.language"],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "name": "constant parameter",
+        "scope": ["constant", "variable.parameter"],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  }
