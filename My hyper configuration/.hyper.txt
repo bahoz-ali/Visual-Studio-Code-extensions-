@@ -1,16 +1,26 @@
 module.exports = {
   config: {
+
     // default font size in pixels for all tabs
     fontSize: 14,
-    lineHeight:1.2,
-	
+    lineHeight: 1.2,
+    fontFamily: '"MesloLGS NF", "Hack Nerd Font","FiraCode Nerd Font",Menlo, Consolas',
+
+    foregroundColor: '#fff', //color of the text
+    foregroundColor: '#fff', // currently overwritten by plugin
+    backgroundColor: '#000', // currently overwritten by plugin
+    borderColor: '#333',     // currently overwritten by plugin(window,tabs)
+
     hyperBorder: {
-              borderColors: ['#1D976C', '#93F9B9'],
-              blurredColors: ['#177C59', '#84E0A6']
+      borderColors: ['#1D976C', '#93F9B9'],
+      blurredColors: ['#177C59', '#84E0A6']
     },
 
-    // font family with optional fallbacks
-    fontFamily: '"MesloLGS NF", "Hack Nerd Font","FiraCode Nerd Font",Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    // custom padding (css format, i.e.: `top right bottom left`)
+    padding: '12px 14px',
+
+    scrollbarColor: 'tomato', // any valid css color
+    scrollbarOpacity: 0.1, // value between 0 and 1
 
     webGLRenderer: false,
 
@@ -21,16 +31,8 @@ module.exports = {
     cursorShape: 'BLOCK',
     cursorBlink: true,
 
-    
-    foregroundColor: '#fff', //color of the text
-    foregroundColor: '#fff', // currently overwritten by plugin
-    backgroundColor: '#000', // currently overwritten by plugin
-    borderColor: '#333',    // currently overwritten by plugin(window,tabs)
-
-    // custom css to embed in the main window
-    css: '',
-    // custom css to embed in the terminal window
-    termCSS: '',
+    css: '',// custom css to embed in the main window
+    termCSS: '',// custom css to embed in the terminal window
 
     // set to `true` (without backticks) if you're using a Linux setup that doesn't show native menus
     // default: `false` on Linux, `true` on Windows (ignored on macOS)
@@ -41,8 +43,6 @@ module.exports = {
     // default: `true` on windows and Linux (ignored on macOS)
     showWindowControls: '',
 
-    // custom padding (css format, i.e.: `top right bottom left`)
-    padding: '12px 14px',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
@@ -66,10 +66,7 @@ module.exports = {
       lightWhite: '#ffffff'
     },
 
-    
-     scrollbarColor: 'tomato', // any valid css color
-     scrollbarOpacity: 0.1, // value between 0 and 1
-  
+
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
@@ -83,7 +80,7 @@ module.exports = {
     //shellArgs: ['--command=usr/bin/bash.exe', '-l', '-i'],
 
     // for environment variables
-    env: { TERM: 'cygwin'},
+    env: { TERM: 'cygwin' },
 
     // set to false for no bell
     //bell: 'SOUND',
@@ -101,37 +98,36 @@ module.exports = {
     // for advanced config flags please refer to https://hyper.is/#cfg
   },
 
-     // The number of rows to be persisted in terminal buffer for scrolling
-    scrollback: 10000,
+  // The number of rows to be persisted in terminal buffer for scrolling
+  scrollback: 10000,
 
-    // hyper-pane config
-    paneNavigation: {
-      debug: false,
-      hotkeys: {
-        navigation: {
-          up: 'ctrl+alt+up',
-          down: 'ctrl+alt+down',
-          left: 'ctrl+alt+left',
-          right: 'ctrl+alt+right'
-        },
-        jump_prefix: 'ctrl+alt', // completed with 1-9 digits
-        permutation_modifier: 'shift', // Added to jump and navigation hotkeys for pane permutation
-        maximize: 'meta+enter'
+  // hyper-pane config
+  paneNavigation: {
+    debug: false,
+    hotkeys: {
+      navigation: {
+        up: 'ctrl+alt+up',
+        down: 'ctrl+alt+down',
+        left: 'ctrl+alt+left',
+        right: 'ctrl+alt+right'
       },
-      showIndicators: false, // Show pane number
-      indicatorPrefix: '^⌥', // Will be completed with pane number
-      indicatorStyle: { // Added to indicator <div>
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        fontSize: '10px'
-      },
-      focusOnMouseHover: false,
-      inactivePaneOpacity: 0.6 // Set to 1 to disable inactive panes dimming
+      jump_prefix: 'ctrl+alt', // completed with 1-9 digits
+      permutation_modifier: 'shift', // Added to jump and navigation hotkeys for pane permutation
+      maximize: 'meta+enter'
     },
- 
-     activeTab: '🦅',	 
-   
+    showIndicators: false, // Show pane number
+    indicatorPrefix: '^⌥', // Will be completed with pane number
+    indicatorStyle: { // Added to indicator <div>
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      fontSize: '10px'
+    },
+    focusOnMouseHover: false,
+    inactivePaneOpacity: 0.6 // Set to 1 to disable inactive panes dimming
+  },
+
+
   // a list of plugins to fetch and install from npm
   // format: [@org/]project[#version]
   // examples:
@@ -139,18 +135,18 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-            "hyper-night-owl", 
-	     "hyper-search",
-	     "hyper-pane",
-             "hypercwd",    
-             "hyper-tab-icons",
-	     "hyper-tab-icons-plus",
-             'hyper-font-ligatures',
-             'hyperborder',
-	     "hyper-fading-scrollbar",
-	     "hyper-active-tab",
-	     "hyper-manager",
-],
+    "hyper-highlight-active-pane",
+    "hyper-rose-pine",
+    "hyperocean",
+    "hyper-search",
+    "hyper-pane",
+    "hyper-font-ligatures",
+    //"hyperborder",
+    "hyper-fading-scrollbar",
+    "hyper-manager",
+    "hyperline",
+    "hyperterm-dibdabs"
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
