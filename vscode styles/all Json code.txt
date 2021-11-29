@@ -142,8 +142,8 @@
   },
   "warmUp.changeCount": "120",
   "svg.preview.autoOpen": true,
-  "workbench.colorTheme": "Dracula",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Shades of Purple",
+  "workbench.iconTheme": "material-icon-theme",
   "code-runner.clearPreviousOutput": true,
   "code-runner.showExecutionMessage": false,
   "turboConsoleLog.addSemicolonInTheEnd": true,
@@ -223,6 +223,7 @@
     "repellat",
     "rerum",
     "signin",
+    "toastify",
     "unde",
     "vero",
     "voluptatem",
@@ -231,5 +232,19 @@
   ],
   "dart.flutterCreateOrganization": "com.bahoz",
   "atomKeymap.promptV3Features": true,
-  "editor.multiCursorModifier": "ctrlCmd"
+  "editor.multiCursorModifier": "ctrlCmd",
+  "workbench.editor.untitled.hint": "hidden",
+  "editor.lineNumbers": "on",
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "terminal.integrated.lineHeight": 1.1,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+
+  // terminal properties..
+  "terminal.integrated.fontWeightBold": "500",
+  "terminal.integrated.letterSpacing": 1.1,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line"
 }
