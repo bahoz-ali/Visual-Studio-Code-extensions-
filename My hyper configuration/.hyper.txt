@@ -4,8 +4,11 @@ module.exports = {
     // default font size in pixels for all tabs
     fontSize: 14,
     lineHeight:1.3,
-    letterSpacing:1.1,	
-    fontFamily: '"FuraCode Nerd Font light","MesloLGS NF","Hack Nerd Font","FiraCode Nerd Font",Menlo, Consolas',
+    letterSpacing:1.1,
+    //fontWeight: '500',
+    fontWeightBold: '200', // weight of prop line ..
+    
+    fontFamily: '"JetBrains Mono", "MesloLGS NF","Hack Nerd Font","FiraCode Nerd Font",Menlo, Consolas',
 
     foregroundColor: '#fff', //color of the text
     foregroundColor: '#fff', // currently overwritten by plugin
@@ -66,7 +69,13 @@ module.exports = {
       lightCyan: '#00ffff',
       lightWhite: '#ffffff'
     },
-
+      
+      // you can drop file to get path of that file..
+      hyperDropFile:{
+      pathRewriter:(path,hyperConfig)=>{
+         return path + "$"
+      },
+    },
 
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -146,7 +155,8 @@ module.exports = {
     "hyper-fading-scrollbar",
     "hyper-manager",
     "hyperline",
-    "hyperterm-dibdabs"
+    "hyperterm-dibdabs",
+    "hyper-drop-file",
   ],
 
   // in development, you can create a directory under
