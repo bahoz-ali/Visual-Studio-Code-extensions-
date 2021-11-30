@@ -1,0 +1,12 @@
+la rastida am theme haya har ka oh-my-zsh download dakay 
+ballam handek dasktraim krdwa xom ja datwanit har aw fila 
+copy pastey naw themea orginalakay naw oh-my-zsh bkay lam locationa:
+
+\\wsl$\Ubuntu\home\bahoz\.oh-my-zsh\themes
+
+wa zsh bakyawa dabet theme bgroy bikay baway mn path:
+
+\\wsl$\Ubuntu\home\bahoz\.zshrc
+
+laxwarawa theme bdozawa bigora
+
